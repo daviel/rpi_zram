@@ -6,9 +6,6 @@ sudo wget -O /usr/bin/zram.sh https://raw.githubusercontent.com/daviel/rpi_zram/
 #make file executable
 sudo chmod +x /usr/bin/zram.sh
 
-#add line before exit 0
-#sudo vi /etc/rc.local -c 'normal GO/usr/bin/zram.sh &' -c ':wq'
-
 #add systemd service
 
 sudo tee /etc/systemd/system/zram.service <<-'EOF'
